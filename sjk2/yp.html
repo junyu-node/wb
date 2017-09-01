@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>柱状图</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="stylesheet" type="text/css" href="css/base.css">
+  <link rel="stylesheet" type="text/css" href="css/lg.css">
+    <link href="css/ts.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="js/ts.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/laydate.js"></script>
+    <script>
+     $(function(){
+      loadTab();
+    });
+    </script>
+</head>
+<body class="indexbg">
+<!-- duihua -->
+<div class="fasong">
+  <div class="fasong_bg"></div>
+  <div class="fasong_box">
+  <span class="fasong_span"><img src="images/duihua.png" alt=""></span>
+  <form action="">
+    <span></span>
+    <input type="text" class="duihua_input">
+    <input type="submit" value="发送" class="fs_sub">
+  </form>
+  </div>
+</div>
+<script>
+  $(function(){
+    $(".fasong_span").click(function(){
+      $(".fasong").toggleClass("fasong2");
+    });
+  });
+
+</script>
+<!-- nav -->
+<div class="t-nav">
+    <a href="/" class="t-logo"><img src="images/logoi.png" alt=""></a>
+  <ul class="t-nav-ul">
+    <li><a href="javascript:;" class="t-nav-ula">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+    <li>
+    <a href="javascript:;">影片数据</a>
+         <ul class="t-nav-2">
+          <li><a href="javascript:;" class="t-nav-2a">影片数据</a></li>
+          <li><a href="javascript:;">实时票房</a></li>
+          <li><a href="javascript:;">影片票房</a></li>
+          <li><a href="javascript:;">大盘数据</a></li>
+          <li><a href="javascript:;">上映日历</a></li>
+          <li><a href="javascript:;">历史票房</a></li>
+          <li><a href="javascript:;">备案信息</a></li>
+          <li><a href="javascript:;">公映信息</a></li>
+         </ul>
+    </li>
+    <li><a href="javascript:;">影院数据</a></li>
+    <li><a href="javascript:;">人物数据</a></li>
+    <li><a href="javascript:;">公司数据</a></li>
+    <li><a href="javascript:;">舆情数据</a></li>
+    <li><a href="javascript:;">电影工具</a></li>
+  </ul>
+</div>
+<script>
+$(function(){
+  var n=0;
+  $(".t-nav-ul>li").click(function(){
+    $(this).children(".t-nav-2").toggle();
+    if(n==0){
+      $(this).children("a").css('color','#f68c3d');
+      n=1;
+    }else{
+      $(this).children("a").css('color','#fff')
+      n=0;
+    };
+  });
+});
+</script>
+<!-- float window -->
+<div class="floatwindow">
+  <div class="d_nav">影片对比</div>
+  <div class="contrast">
+    <div><input type="type" class="text" /></div>
+    <div class="font">您可以从左侧列表中添加影片进行操作</div>
+    <div class="contra_btn">
+      <input type="button" value="对比" />
+      <input type="button" value="清空" />
+    </div>
+    <ul>
+      <li>变心金刚5：最后的骑士<a href="javascript:;"></a></li>
+      <li>冈仁波齐<a href="javascript:;"></a></li>
+      <li>原谅他77次<a href="javascript:;"></a></li>
+    </ul>
+  </div>
+<img src="images/pk2.png" alt="" class="fw_ri">
+</div>
+<script type="text/javascript">
+  $(function(){
+    $(".fw_content ul li i").click(function(){
+      $(this).parent("li").remove();
+    });
+    
+    $(".fw_ri").click(function(event){
+      $(".floatwindow").toggleClass("floatwindow1");
+      event.stopPropagation();
+    });
+
+  });
+</script>
+<!-- header -->
+<div class="header shaped_p">
+<!-- search -->
+    <div class="shaped">
+    	<div class="shaped_h">异形：契约</div>
+    	<ul>
+    		<li>
+    			<div>票房</div>
+    			<p>9.51亿</p>
+    		</li>
+    		<li>
+    			<div>首周票房</div>
+    			<p>8.25亿</p>
+    		</li>
+    		<li>
+    			<div>首日票房</div>
+    			<p>2.89亿</p>
+    		</li>
+    		<li>
+    			<div>总场次</div>
+    			<p>65.59万</p>
+    		</li>
+    		<li>
+    			<div>总人次</div>
+    			<p>2,535.80</p>
+    		</li>
+    	</ul>
+    </div>
+    <div class="member"><img src="images/touxiang.png" alt="" class="touxiang"><i>alex</i> <span></span></div>
+    <a href="javascript:;" class="money">154563</a>
+    <div class="search">
+      <form action="">
+        <input type="text" class="sr" placeholder="影片\艺人\导演\公司名称搜索">
+        <input type="submit" class="tj" value="">
+      </form>
+    </div>
+</div>
+<!-- chanxun -->
+<div class="j_chanxun shaped_nav">
+    <ul class="tabs tabs_piaofang ">
+      <li>
+      	<a href="#" name=".tab1_1">影片详情</a>
+      </li>
+      <li>
+      	<a href="#" name=".tab1_1">票房数据</a>
+      </li>
+      <li>
+      	<a href="#" name=".tab1_1">舆情数据</a>
+      </li>
+      <li>
+      	<a href="#" name=".tab1_1">排片数据</a>
+      </li>
+    </ul>
+    <div class="content">
+    	<div class="tab">
+		 	<ul class="clearfix">
+		 		<li><a href="javascript:;" class="current">每日票房<div class="jiao_d"></div></a></li>
+		 		<li><a href="javascript:;">影院数据</a></li>
+		 		<li><a href="javascript:;">院线数据</a></li>
+		 		<li><a href="javascript:;">投影数据</a></li>
+		 		<li><a href="javascript:;">省份数据</a></li>
+		 		<li><a href="javascript:;">城市数据</a></li>
+		 		<li><a href="javascript:;">大区数据</a></li>
+		 		<li><a href="javascript:;">区域数据</a></li>
+		 		<li><a href="javascript:;">影厅数据</a></li>
+		 	</ul>
+		 	<div class="condi demo3">
+		 		<div>放映日期</div>
+		 		<div><input type="text" class="inline laydate-icon" id="start"  /></div>
+		 		<div>-</div>
+		 		<div><input type="text" class="inline laydate-icon" id="end"  /></div>
+		 		<div><input type="button" value="查询" class="shap_query" /></div>
+		 		<div class="sx"><label>重置</label></div>
+		 	</div>
+	 	</div>
+    </div>
+</div>
+<!-- 时段 -->
+<div class="shaped_lest clearfix">
+  <ul class="tabs tab_sd tabs_sd left">
+      <li><a href="#" >全时段</a></li>
+      <li><a href="#" >黄金段</a></li>
+      <li><a href="#" >非黄金段</a></li>  
+   </ul>
+   <div class="transft">
+   	<a href="javascript:;" class="current">列表</a>
+   	<a href="javascript:;">图表</a>
+   </div>
+</div>
+<!-- 列表 -->
+<div class="bc_list chart_ex" style="display:block;">
+<!-- 票房情况 -->
+	<div class="pfqk_title">
+		<span>总票房：<i>95,109.97万</i></span>
+		<span>总人次：<i>2,535.97万</i></span>
+		<span>总场次：<i>65.57万</i></span>
+		<!-- caozuo -->
+	  <div class="caozuo">
+	 	 <a href="javascript:;" class="shouc">收藏本页</a>
+	  </div>
+	</div>
+  <!-- top -->
+  <div class="lb_top">
+	  <span>排名</span>
+	  <span>放映日期</span>
+	  <span>上映状态</span>
+	  <span>综合票房</span>
+	  <span>票房占比</span>
+	  <span>总人次(万)</span>
+	  <span>总场次(万)</span>
+	  <span>平均票价</span>
+	  <span>累计票房</span>
+  </div>
+  <!-- list -->
+  <div class="lb_top lb_top_f">
+	  <span>汇总</span>
+	  <span></span>
+	  <span>123456</span>
+	  <span>123123</span>
+	  <span>31321</span>
+	  <span>461313</span>
+	  <span>73161</span>
+	  <span>461313</span>
+	  <span>73161</span>
+  </div>
+  <div class="lb_box">
+	  <div class="lb_top">
+		  <span>1</span>
+		  <span>2016-12-12</span>
+		  <span>32455.55</span>
+		  <span>6666.66</span>
+		  <span>66.66%</span>
+		  <span>666.66</span>
+		  <span>66.66%</span>
+		  <span>66.66</span>
+		  <span>66.66</span>
+	  </div>
+	  <div class="lb_top">
+		  <span>1</span>
+		  <span>2016-12-12</span>
+		  <span>32455.55</span>
+		  <span>6666.66</span>
+		  <span>66.66%</span>
+		  <span>666.66</span>
+		  <span>66.66%</span>
+		  <span>66.66</span>
+		  <span>66.66</span>
+	  </div>
+	  <div class="lb_top">
+		  <span>1</span>
+		  <span>2016-12-12</span>
+		  <span>32455.55</span>
+		  <span>6666.66</span>
+		  <span>66.66%</span>
+		  <span>666.66</span>
+		  <span>66.66%</span>
+		  <span>66.66</span>
+		  <span>66.66</span>
+	  </div>
+	  <div class="lb_top">
+		  <span>1</span>
+		  <span>2016-12-12</span>
+		  <span>32455.55</span>
+		  <span>6666.66</span>
+		  <span>66.66%</span>
+		  <span>666.66</span>
+		  <span>66.66%</span>
+		  <span>66.66</span>
+		  <span>66.66</span>
+	  </div>
+	  <div class="lb_top">
+		  <span>1</span>
+		  <span>2016-12-12</span>
+		  <span>32455.55</span>
+		  <span>6666.66</span>
+		  <span>66.66%</span>
+		  <span>666.66</span>
+		  <span>66.66%</span>
+		  <span>66.66</span>
+		  <span>66.66</span>
+	  </div>
+	  <div class="lb_top">
+		  <span>1</span>
+		  <span>2016-12-12</span>
+		  <span>32455.55</span>
+		  <span>6666.66</span>
+		  <span>66.66%</span>
+		  <span>666.66</span>
+		  <span>66.66%</span>
+		  <span>66.66</span>
+		  <span>66.66</span>
+	  </div>
+	  <div class="lb_top">
+		  <span>1</span>
+		  <span>2016-12-12</span>
+		  <span>32455.55</span>
+		  <span>6666.66</span>
+		  <span>66.66%</span>
+		  <span>666.66</span>
+		  <span>66.66%</span>
+		  <span>66.66</span>
+		  <span>66.66</span>
+	  </div>
+	  <div class="lb_top">
+		  <span>1</span>
+		  <span>2016-12-12</span>
+		  <span>32455.55</span>
+		  <span>6666.66</span>
+		  <span>66.66%</span>
+		  <span>666.66</span>
+		  <span>66.66%</span>
+		  <span>66.66</span>
+		  <span>66.66</span>
+	  </div>
+	  <div class="lb_top">
+		  <span>1</span>
+		  <span>2016-12-12</span>
+		  <span>32455.55</span>
+		  <span>6666.66</span>
+		  <span>66.66%</span>
+		  <span>666.66</span>
+		  <span>66.66%</span>
+		  <span>66.66</span>
+		  <span>66.66</span>
+	  </div>
+</div>
+<!-- divpage -->
+<div class="fenye">
+	<a href="javascript:;" class="page">首页</a>
+	<a href="javascript:;"><</a>
+	<a href="javascript:;" class="current">1</a>
+	<a href="javascript:;">2</a>
+	<a href="javascript:;">3</a>
+	<a href="javascript:;">4</a>
+	<a href="javascript:;">5</a>
+	<a href="javascript:;">6</a>
+	<a href="javascript:;">7</a>
+	<a href="javascript:;">8</a>
+	<a href="javascript:;">9</a>
+	<a href="javascript:;">...</a>
+	<a href="javascript:;">></a>
+	<a href="javascript:;" class="page">尾页</a>
+	<span>共<i>46413213条</i>记录</span>
+	<span>跳转至<input type="text" />页</span>
+	<a href="javascript:;" class="jump" >GO</a>
+</div>
+</div>
+<script src="js/echarts.min.js" type="text/javascript"></script>
+<div class="bc_list chart_ex">
+	<div class="pfqk_title">
+		<span>《异形：契约》2017-06-22至2017-07-03数据</span>
+		<span>总人次：<i>2,535.97万</i></span>
+		<span>总场次：<i>65.57万</i></span>
+		<!-- caozuo -->
+	  <div class="caozuo">
+	 	 <a href="javascript:;" class="shouc">收藏本页</a>
+	  </div>
+	</div>
+	<div id="chart" style="height:500px;"></div>
+</div>
+<script type="text/javascript">
+!function(){
+	laydate.skin('molv');//切换皮肤，请查看skins下面皮肤库
+	laydate({elem: '#demo'});//绑定元素
+}();
+
+//日期范围限制
+var start = {
+    elem: '#start',
+    format: 'YYYY-MM-DD',
+    min: laydate.now(), //设定最小日期为当前日期
+    max: '2099-06-16', //最大日期
+    istime: true,
+    istoday: false,
+    choose: function(datas){
+         end.min = datas; //开始日选好后，重置结束日的最小日期
+         end.start = datas //将结束日的初始值设定为开始日
+    }
+};
+
+var end = {
+    elem: '#end',
+    format: 'YYYY-MM-DD',
+    min: laydate.now(),
+    max: '2099-06-16',
+    istime: true,
+    istoday: false,
+    choose: function(datas){
+        start.max = datas; //结束日选好后，充值开始日的最大日期
+    }
+};
+laydate(start);
+laydate(end);
+
+//自定义日期格式
+laydate({
+    elem: '#test1',
+    format: 'YYYY年MM月DD日',
+    festival: true, //显示节日
+    choose: function(datas){ //选择日期完毕的回调
+        alert('得到：'+datas);
+    }
+});
+
+//日期范围限定在昨天到明天
+laydate({
+    elem: '#hello3',
+    min: laydate.now(-1), //-1代表昨天，-2代表前天，以此类推
+    max: laydate.now(+1) //+1代表明天，+2代表后天，以此类推
+});
+</script>
+<script>
+var myChart = echarts.init(document.getElementById('chart'));
+option = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'cross',
+            crossStyle: {
+                color: '#999'
+            }
+        }
+    },
+    toolbox: {
+        feature: {
+            dataView: {show: true, readOnly: false},
+            magicType: {show: true, type: ['line', 'bar']},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    legend: {
+        data:['综合票房','上座率','平均温度']
+    },
+    xAxis: [
+        {
+            type: 'category',
+            data: ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'],
+            axisPointer: {
+                type: 'shadow'
+            }
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            name: '水量',
+            min: 0,
+            max: 250,
+            interval: 50,
+            axisLabel: {
+                formatter: '{value} ml'
+            }
+        },
+        {
+            type: 'value',
+            name: '温度',
+            min: 0,
+            max: 25,
+            interval: 5,
+            axisLabel: {
+                formatter: '{value} °C'
+            }
+        }
+    ],
+    series: [
+        {
+            name:'综合票房',
+            type:'bar',
+            data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+        },
+        {
+            name:'上座率',
+            type:'bar',
+            data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+        },
+        {
+            name:'平均温度',
+            type:'line',
+            yAxisIndex: 1,
+            data:[2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
+        }
+    ]
+};
+myChart.setOption(option);
+</script>
+<!-- footer -->
+  <!-- <div class="footer">
+    <p>2017©版权所有：北京拓普世纪文化咨询有限公司</p>
+    <p>COPYRIGHT: 2017 BEIJING TOP CENTURY CULTURAL COUNSELING CO., LTD.</p>
+  </div> -->
+
+</body>
+</html>

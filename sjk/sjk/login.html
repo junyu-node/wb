@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>登录页</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+</head>
+<body class="t-index-body">
+<!-- nav -->
+<div class="t-nav">
+    <a href="/" class="t-logo"><img src="images/logoi.png" alt=""></a>
+	<ul class="t-nav-ul">
+		<li><a href="" class="t-nav-ula">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+		<li>
+		<a href="javascript:void">影片数据</a>
+         <ul class="t-nav-2">
+         	<li><a href="" class="t-nav-2a">影片数据</a></li>
+         	<li><a href="">实时票房</a></li>
+         	<li><a href="">影片票房</a></li>
+         	<li><a href="">大盘数据</a></li>
+         	<li><a href="">上映日历</a></li>
+         	<li><a href="">历史票房</a></li>
+         	<li><a href="">备案信息</a></li>
+         	<li><a href="">公映信息</a></li>
+         </ul>
+		</li>
+		<li><a href="">影院数据</a></li>
+		<li><a href="">人物数据</a></li>
+		<li><a href="">公司数据</a></li>
+		<li><a href="">舆情数据</a></li>
+		<li><a href="">电影工具</a></li>
+	</ul>
+</div>
+<script>
+$(function(){
+	$(".t-nav-ul>li").click(function(){
+		$(this).children(".t-nav-2").toggle();
+	});
+});
+</script>
+<!-- login -->
+	<div class="login-box">
+		<img src="images/logo.png" alt="" class="logo">
+        <form action="">
+        	<input type="text" class="textphone">
+        	<div class="login-1">
+        	<input type="text" class="code"><a href="javascript:;" class="getcode">获取验证码</a>
+        	</div>
+        	<input type="submit" value="登录" class="loginicon">
+
+        </form>
+	</div>
+	<div class="footer">
+		<p>2017©版权所有：北京拓普世纪文化咨询有限公司</p>
+		<p>COPYRIGHT: 2017 BEIJING TOP CENTURY CULTURAL COUNSELING CO., LTD.</p>
+	</div>
+</body>
+</html>

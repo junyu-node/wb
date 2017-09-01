@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>主界面</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+    <link href="css/tabStyle.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="js/tabScript.js" type="text/javascript"></script>
+    <script>
+	    $(function(){
+			loadTab();
+		});
+    </script>
+    <link href="http://cdn.bootcss.com/iCheck/1.0.2/skins/all.css" rel="stylesheet">
+</head>
+<body class="indexbg">
+<!-- duihua -->
+<div class="fasong">
+  <div class="fasong_bg"></div>
+  <div class="fasong_box">
+  <span class="fasong_span"><img src="images/duihua.png" alt=""></span>
+  <form action="">
+    <span></span>
+    <input type="text" class="duihua_input">
+    <input type="submit" value="发送" class="fs_sub">
+  </form>
+  </div>
+</div>
+<script>
+  $(function(){
+    $(".fasong_span").click(function(){
+      $(".fasong").toggleClass("fasong2");
+    });
+  });
+
+</script>
+<!-- nav -->
+<div class="t-nav">
+    <a href="/" class="t-logo"><img src="images/logoi.png" alt=""></a>
+	<ul class="t-nav-ul">
+		<li><a href="" class="t-nav-ula">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+		<li>
+		<a href="javascript:void">影片数据</a>
+         <ul class="t-nav-2">
+         	<li><a href="" class="t-nav-2a">影片数据</a></li>
+         	<li><a href="">实时票房</a></li>
+         	<li><a href="">影片票房</a></li>
+         	<li><a href="">大盘数据</a></li>
+         	<li><a href="">上映日历</a></li>
+         	<li><a href="">历史票房</a></li>
+         	<li><a href="">备案信息</a></li>
+         	<li><a href="">公映信息</a></li>
+         </ul>
+		</li>
+		<li><a href="">影院数据</a></li>
+		<li><a href="">人物数据</a></li>
+		<li><a href="">公司数据</a></li>
+		<li><a href="">舆情数据</a></li>
+		<li><a href="">电影工具</a></li>
+	</ul>
+</div>
+<script>
+$(function(){
+	$(".t-nav-ul>li").click(function(){
+		$(this).children(".t-nav-2").toggle();
+	});
+});
+</script>
+<!-- float window -->
+<div class="floatwindow">
+<div class="fw_content">
+<ul>
+	<li>这次自行车 <i></i></li>
+	<li>自行车自行车 <i></i></li>
+	<li>自行车在出租车 <i></i></li>
+</ul>
+<div class="duibi">
+<p>对比</p>
+<p>取消对比</p>
+</div>
+</div>
+<div class="fw_ri">
+<span>vs</span>
+<p>对比浮窗</p>
+</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		$(".fw_content ul li i").click(function(){
+			$(this).parent("li").remove();
+		});
+		
+		$(".fw_ri").click(function(){
+			$(".floatwindow").toggleClass("floatwindow1");
+		});
+
+	});
+</script>
+<!-- header -->
+<div class="header">
+<!-- search -->
+		<div class="search">
+			<form action="">
+				<input type="text" class="sr" placeholder="影片\艺人\导演\公司名称搜索">
+				<input type="submit" class="tj" value="">
+			</form>
+		</div>
+		<div class="member"><img src="images/touxiang.png" alt="" class="touxiang"><i>alex</i> <span></span></div>
+		<a href="" class="money">154563</a>
+</div>
+<!-- zhuye -->
+<div class="t-zjm">
+	<div class="t-zjm-box">
+	<p class="t-zjm-p"><span>收藏&足迹</span>根据您的收藏页面、浏览
+足迹和使用习惯推荐</p>
+    <ul class="t-zjm-ul">
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    </ul>
+	</div>
+	<div class="t-zjm-box">
+	<p class="t-zjm-p t-zjm-p2"><span>今日实时票房<br><i>1259.9</i>万</span>次更新于: 2017-02-18，22:35</p>
+    <ul class="t-zjm-ul">
+    	<li class="reda"><a href="" >比例林恩的中场战事</a><i></i></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    </ul>
+	</div>
+	<div class="t-zjm-box">
+	<p class="t-zjm-p t-zjm-p3"><span>论坛热帖</span>加入论坛获得更多金币</p>
+    <ul class="t-zjm-ul2">
+    	<li><a href=""><img src="images/touxiang2.png" alt=""><p class="tiname">穆赫兰道</p><p>我有富强和和谐。</p></a></li>
+    	<li><a href=""><img src="images/touxiang2.png" alt=""><p class="tiname">穆赫兰道</p><p>我有富强和和谐。</p></a></li>
+    	<li><a href=""><img src="images/touxiang2.png" alt=""><p class="tiname">穆赫兰道</p><p>我有富强和和谐。</p></a></li>
+    	<li><a href=""><img src="images/touxiang2.png" alt=""><p class="tiname">穆赫兰道</p><p>我有富强和和谐。</p></a></li>
+    </ul>
+	</div>
+	<div class="t-zjm-box">
+	<p class="t-zjm-p t-zjm-p4"><span>公司财富排行榜</span>根据您的收藏页面、浏览足迹和
+使用习惯推荐</p>
+    <ul class="t-zjm-ul">
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    </ul>
+	</div>
+	<div class="t-zjm-box">
+	<p class="t-zjm-p t-zjm-p5"><span>个人财富排行榜</span>根据您的收藏页面、浏览足迹
+和使用习惯推荐</p>
+    <ul class="t-zjm-ul">
+    	<li class="reda"><a href="">比例林恩的中场战事</a><i></i></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    	<li><a href="">比例林恩的中场战事</a></li>
+    </ul>
+	</div>
+	<div class="t-zjm-box">
+	<p class="t-zjm-p t-zjm-p6"><span>猜票房</span>基础参与金币消耗为20
+<br>详见<a href="" style="color: #4ba3da">参与规则</a></p>
+<div class="jingcai">
+<p class="jingcai_p1">《太空旅客》首周票房竞猜(1.13-1.15)</p>
+<p class="jingcai_p2">距离竞猜结束还有01天05小时</p>
+<form action="">
+<p class="beishu">参与倍数：
+<a href="">1</a>
+<a href="">2</a>
+<span href="">3</span>
+<a href="">4</a>
+<a href="">5</a></p>
+<div class="jingcai_radio">
+<p>
+<input type="radio" name="sex" value="1" checked id="jiage1">
+<label for="jiage1">3500万及以下</label></p>
+<p>
+<input type="radio" name="sex" value="2" id="jiage2">
+<label for="jiage2">3500-6500万</label></p>
+<p>
+<input type="radio" name="sex" value="3" id="jiage3">
+<label for="jiage3">6500-8500万</label></p>
+<p>
+<input type="radio" name="sex" value="4" id="jiage4">
+<label for="jiage4">8500万 -1亿</label></p>
+<p>
+<input type="radio" name="sex" value="5" id="jiage5">
+<label for="jiage5">1-1.2亿</label></p>
+<p>
+<input type="radio" name="sex" value="6" id="jiage6">
+<label for="jiage6">大于1.2亿</label></p>
+</div>
+ <span style="color: #acabab">本次竞猜消耗金币<i style="color: #4ba3da !important;font-style:normal;">20</i></span>
+<input type="submit" value="提交" class="jingcai_tj">
+</form>
+
+
+
+
+</div>
+	</div>
+
+</div>
+<!--icheck的js文件-->
+<script src="http://cdn.bootcss.com/iCheck/1.0.2/icheck.min.js"></script>
+<script>
+$(function(){
+    $('.jingcai_radio').iCheck({
+  radioClass: 'iradio_minimal-blue'
+});
+
+});
+</script>
+<!-- footer -->
+	<div class="footer">
+		<p>2017©版权所有：北京拓普世纪文化咨询有限公司</p>
+		<p>COPYRIGHT: 2017 BEIJING TOP CENTURY CULTURAL COUNSELING CO., LTD.</p>
+	</div>
+
+</body>
+</html>
